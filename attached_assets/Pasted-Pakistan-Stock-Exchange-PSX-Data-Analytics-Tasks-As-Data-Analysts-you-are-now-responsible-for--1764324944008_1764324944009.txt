@@ -1,0 +1,287 @@
+Pakistan Stock Exchange (PSX): Data Analytics Tasks 
+As Data Analysts, you are now responsible for understanding and interpreting real financial market data from 
+the Pakistan Stock Exchange (PSX). PSX is Pakistan’s central marketplace where investors buy and sell 
+shares, indices, bonds, and other securities. Every trading day generates valuable datasets that analysts use to 
+study market behavior, identify trends, evaluate risks, and support investment decisions. 
+To complete the 60 analytics tasks assigned to you, you will work with several key types of PSX data: 
+ Price Data (OHLC): 
+Daily Open, High, Low, and Close values, used for trend analysis, moving averages, volatility, and 
+forecasting. 
+ Volume & Turnover: 
+Shows trading activity and liquidity across stocks, helping you understand where market interest is 
+increasing or declining. 
+ Market Indices (KSE-100, KSE-30, All-Share Index): 
+Used for benchmarking performance, calculating Beta, understanding market movements, and 
+comparing stocks with overall market trends. 
+ Sector Data: 
+Companies grouped into sectors like Banking, Cement, Technology, Oil & Gas—important for sector
+wise comparisons and portfolio diversification. 
+ Corporate Actions & Financial Indicators: 
+Dividends, earnings, bonus shares, rights issues, and annual reports—used in event analysis and 
+performance evaluation. 
+ Economic & External Influencers: 
+USD/PKR exchange rate, interest rates, inflation, global market shifts—critical when studying how 
+macro factors impact the PSX. 
+Throughout these tasks, you will apply the full data analytics workflow: 
+✔ Data collection, cleaning, and preprocessing 
+✔ Exploratory and statistical analysis 
+✔ Technical indicators and charting 
+✔ Machine learning and forecasting 
+✔ Portfolio analytics and backtesting 
+✔ Event-based and economic impact studies 
+✔ Automated reporting and dashboard design 
+By completing these tasks, you will learn how real analysts examine market data, extract insights, and support 
+decision-making in the finance and investment world. These activities simulate how actual Data Analysts work 
+in investment firms, trading desks, fintech companies, and research departments. 
+PSX Data Analytics Tasks (1–60) 
+A. Data Collection & Cleaning 
+1. Download PSX daily price data for 5–20 companies (CSV/Excel). 
+2. Clean missing values, outliers, duplicate rows, and incorrect dates. 
+3. Standardize company names, symbols, and date formats. 
+4. Merge stock price data with sector data and KSE100 index. 
+5. Develop a reusable ETL pipeline in Python. 
+6. Load PSX data into a SQL database and create queries. 
+B. Descriptive Analytics 
+7. Compute daily, weekly, monthly, and annual returns. 
+8. Calculate volatility per script. 
+9. Identify top gainers/losers for different time periods. 
+10. Analyze sector-wise performance. 
+11. Summarize OHLC data. 
+12. Create rolling mean and rolling std metrics. 
+C. Visualization Tasks 
+13. Plot line charts for price trends. 
+14. Create candlestick charts. 
+15. Compare stock vs KSE100 index. 
+16. Create volume bar charts. 
+17. Generate heatmaps for sector performance. 
+18. Visualize moving averages. 
+D. Statistical Analytics 
+19. Calculate correlation matrix. 
+20. Compute covariance. 
+21. Calculate Beta relative to KSE100. 
+22. Evaluate Sharpe, Sortino, Treynor ratios. 
+23. Identify mean reversion stocks. 
+24. Perform stationarity tests. 
+E. Technical Indicators 
+25. Implement MA crossover strategy. 
+26. Calculate RSI indicator. 
+27. Apply MACD indicator. 
+28. Use Bollinger Bands. 
+29. Implement VWAP analysis. 
+30. Analyze ATR for volatility. 
+F. Machine Learning & Predictive Analytics 
+31. Forecast prices using ARIMA. 
+32. Build Prophet forecasting model. 
+33. Train classification model for direction. 
+34. Build regression model for price prediction. 
+35. Perform K-means clustering. 
+36. Detect outliers using Isolation Forest. 
+37. Build LSTM/GRU models. 
+38. Evaluate models with RMSE and MAE. 
+G. Portfolio Analytics & Finance 
+39. Build efficient frontier. 
+40. Compute portfolio metrics. 
+41. Simulate Monte Carlo portfolios. 
+42. Create sector-balanced portfolios. 
+43. Backtest trading strategies. 
+44. Compare dividend vs growth stocks. 
+H. Event, Seasonal & Economic Analysis 
+45. Analyze budget announcement effects. 
+46. Analyze Ramadan seasonality. 
+47. Study USD/PKR impact on PSX. 
+48. Analyze interest rate impact. 
+49. Perform sentiment analysis on PSX news. 
+50. Compare PSX with global market shocks. 
+I. Reporting 
+51. Create monthly investor reports. 
+52. Generate company performance reports. 
+53. Prepare weekly trend analysis reports. 
+54. Write executive summaries. 
+55. Prepare risk assessment reports. 
+56. Create automated PDF reports in Python. 
+J. Dashboards & Business Intelligence 
+57. Build Power BI price/volume dashboards. 
+58. Create portfolio comparison dashboards. 
+59. Build auto-refresh dashboards (Python + Power BI API). 
+60. Create full PSX Market Intelligence Dashboard. 
+PSX Data Sources 
+1. PSX Official Data Portal 
+o PSX’s own market data portal. Includes historical OHLC, volume, index data, and more. 
+Pakistan Stock Exchange 
+o Licensing & legal terms are important — check PSX data-feed licensing pages. Pakistan Stock 
+Exchange+1 
+2. StockIntel 
+o Historical PSX stock prices (daily, weekly, etc.) that you can export to Excel. StockIntel Help 
+Center 
+o Historical index data (e.g. KSE-100) downloadable via their index tool. StockIntel Help Center 
+o Their “Historical Data Tool” is very user-friendly for non-programmers. StockIntel Help Center 
+3. PSX Terminal 
+o Real-time PSX data via their REST API and WebSocket streams. PSX Terminal 
+o Good for building live dashboards, trading bots, or market-watch applications. 
+4. psx-data-reader (GitHub) 
+o Open-source Python scraper that pulls PSX historical data into a Pandas DataFrame. GitHub 
+o Useful for researchers or students doing backtesting or data science projects. 
+5. EODHD API 
+o Historical PSX data, including end-of-day (EOD) prices. eodhd.com 
+o They provide a free plan + paid tiers for more advanced data. 
+6. Sourcetable 
+o A no-code / low-code tool: import PSX data into Sourcetable, analyze with AI, and build 
+dashboards. Sourcetable 
+o Suitable for business analysts or students who prefer spreadsheets + UI. 
+7. PSX Invest 
+o AI-powered platform for PSX analysis + insights. PSX Invest 
+o Good for getting signal-based ideas + data for live or historical PSX stocks. 
+8. GitHub – PSX Portfolio Tracker 
+o Community-built tool (Python + Google Sheets) for PSX portfolio tracking. (Referenced via 
+Reddit) Reddit 
+o Helps with portfolio-level data collection + automation. 
+9. Reddit Developer Resources 
+o Developers frequently share PSX data-scraping methods and tools.  
+Python, its data-science libraries, Excel, SQL, and Power BI are more than sufficient for all 60 PSX data 
+analytics tasks. Below is a detailed, practical recommendation designed specifically for students acting as Data 
+Analysts. 
+✅ Detailed Recommendation 
+Your students already know: 
+ Python 
+ Python data libraries (Pandas, NumPy, Matplotlib, Scikit-Learn, etc.) 
+ Excel 
+ SQL 
+ Power BI 
+These tools cover the complete analytics workflow from data extraction to reporting. Together, they are fully 
+capable of handling all 60 PSX data tasks, including ETL pipelines, forecasting, machine learning, dashboards, 
+and automated reporting. 
+Below is a breakdown of which tool is best for which category of tasks. 
+�
+� 1. Python (Primary Tool for 80% of Tasks) 
+�
+� Why Python is essential 
+Python is the backbone for: 
+ Data cleaning 
+ Time-series analysis 
+ Technical indicators 
+ Statistical analysis 
+ Machine learning 
+ Automation 
+ PDF/report generation 
+ Backtesting trading strategies 
+�
+� Best Python Libraries for PSX Tasks 
+Area 
+Data Handling 
+Math & Stats 
+Pandas 
+Library 
+NumPy, SciPy 
+Visualization 
+Matplotlib, Plotly 
+Technical Indicators TA-Lib or Pandas TA 
+Time-series models statsmodels 
+Forecasting 
+ML 
+Deep Learning 
+Prophet 
+scikit-learn 
+Use 
+Load, clean, merge, preprocess PSX datasets 
+Calculations, covariance, correlation 
+Candlestick charts, trends, indicators 
+RSI, MACD, Bollinger Bands 
+ARIMA, ACF/PACF 
+Multi-seasonal forecasting 
+Regression, classification, clustering 
+TensorFlow/Keras, PyTorch LSTM/GRU for stock prediction 
+Automation 
+ReportLab, Python-docx 
+�
+� Python is the best tool for tasks: 
+ 5 → Build ETL pipeline 
+Automated PDF/Word reports 
+ 7–12 → Compute returns, volatility, rolling metrics 
+ 13–18 → All financial charts 
+ 19–24 → Statistical analysis 
+ 25–30 → Technical indicators 
+ 31–38 → Machine learning + forecasting 
+ 43 → Backtesting 
+ 56 → Automated PDFs 
+Conclusion: Python is the core engine. 
+�
+� 2. Excel (Highly Useful for Manual Analysis & 
+Simple Dashboards) 
+�
+� Why Excel is valuable 
+ Easy for beginners 
+ Ideal for exploring data manually 
+ Good for sector-level comparison 
+ PivotTables for summary analysis 
+�
+� Best Excel Tasks 
+ 1 → Viewing raw PSX price data 
+ 2 → Fixing small data issues 
+ 9 → Gainers/Losers tables 
+ 10 → Sector comparisons 
+ 51–54 → Some report preparation 
+Excel is NOT good for: 
+❌ machine learning 
+❌ forecasting 
+❌ large PSX datasets 
+❌ automated pipelines 
+�
+� 3. SQL (For Large Datasets & ETL) 
+�
+� Why SQL is important 
+ PSX generates large, daily time-series data 
+ SQL allows easy retrieval of filtered datasets 
+ Integrates with Power BI for dynamic dashboards 
+�
+� Best SQL Tasks 
+ 6 → Loading PSX data 
+ Filtering by date, sector, price, volume 
+ Preparing data for dashboards 
+ Summarizing OHLC and volume 
+SQL is especially useful if students create a central PSX database. 
+�
+� 4. Power BI (Best for Dashboards + Reporting) 
+�
+� Why Power BI is critical 
+It allows students to turn raw PSX data into: 
+ Visual dashboards 
+ Market intelligence screens 
+ Investor reports 
+ Auto-refresh datasets 
+�
+� Best Power BI Tasks 
+ 57 → Full price/volume dashboard 
+ 58 → Portfolio comparison 
+ 59 → Auto‐refresh dashboards using Python/SQL 
+ 60 → Market Intelligence Dashboard 
+Power BI offers: 
+ DAX formulas 
+ Live data connections 
+ Advanced charts (candlestick visuals via marketplace) 
+�
+� Are These Tools Enough for Students? 
+✔ YES — 100% sufficient 
+All 60 tasks are fully realistic and solvable using only: 
+ Python 
+ Excel 
+ SQL 
+ Power BI 
+�
+� Optional Tools (Not required but helpful) 
+ GitHub (version control) 
+ Jupyter Notebook (analysis environment) 
+ VS Code / PyCharm (coding) 
+These improve workflow but are not mandatory. 
+�
+� Final Recommendation for Students 
+To complete the tasks efficiently: 
+▶ Start in Python 
+For heavy analytics, statistical calculations, technical indicators, ML, forecasting. 
+▶ Use Excel 
+For quick checks, pivot summaries, manual data review. 
+▶ Use SQL 
+For structured storage, filtering, joins, and connecting to Power BI. 
+▶ Use Power BI 
+For dashboards, visual reports, investor presentations. 
+Students who master these tools will build real-world, industry-level PSX analytics skills—the same stack 
+used in fintech, investment firms, and trading companies. 
