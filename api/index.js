@@ -1,6 +1,7 @@
 // Vercel serverless function entry point
 // This file is used by Vercel to serve the Express app
-const { app } = require('../dist/index.cjs');
+// The server bundle is copied here during build as api/server.cjs
+const { app } = require('./server.cjs');
 
 // Vercel expects a handler function that receives (req, res)
 // The Express app can be used directly as a handler
