@@ -1,6 +1,6 @@
 # PSX Analytics Companion
 
-A web application providing ready-to-use Python code snippets for Pakistan Stock Exchange (PSX) data analytics tasks in Google Colab.
+A modern web application providing ready-to-use Python code snippets for Pakistan Stock Exchange (PSX) data analytics tasks in Google Colab.
 
 ## 🚀 Quick Start
 
@@ -18,57 +18,90 @@ npm run dev
 
 The application will be available at **http://localhost:5000**
 
-### 3. Run Client Only (Frontend Development)
+### 3. Build for Production
 
 ```bash
-npm run dev:client
+npm run build
+```
+
+The production build will be in the `dist/` folder.
+
+### 4. Preview Production Build
+
+```bash
+npm run preview
 ```
 
 ## 📋 Available Scripts
 
-- `npm run dev` - Start full-stack development server
-- `npm run dev:client` - Start frontend-only dev server
+- `npm run dev` - Start development server (port 5000)
 - `npm run build` - Build for production
-- `npm start` - Run production build
+- `npm run preview` - Preview production build locally
 - `npm run check` - Type-check TypeScript code
-- `npm run db:push` - Push database schema (requires DATABASE_URL)
 
-## 🔧 Environment Variables (Optional)
+## 🚀 Deploy to Vercel
 
-The app works without a database. Create a `.env` file only if you need database features:
+This project is configured for easy deployment on Vercel:
 
-```env
-DATABASE_URL=postgresql://user:password@localhost:5432/psx_analytics
-PORT=5000
-NODE_ENV=development
-```
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Vercel will automatically:
+   - Install dependencies (`npm install`)
+   - Build the project (`npm run build`)
+   - Deploy from the `dist/` folder
+
+No additional configuration needed! The `vercel.json` is already set up.
 
 ## 📚 Features
 
-- 60+ Python code snippets for PSX data analysis
-- Organized by categories (Data Collection, Analytics, ML, etc.)
+- **60+ Python code snippets** for PSX data analysis
+- Organized by categories:
+  - Data Collection & Cleaning
+  - Descriptive Analytics
+  - Visualization Tasks
+  - Statistical Analytics
+  - Technical Indicators
+  - Machine Learning & Predictive Analytics
+  - Portfolio Analytics & Finance
+  - Reporting
 - Search and filter functionality
 - Copy-ready code for Google Colab
-- Modern, responsive UI
+- Modern, responsive UI with dark mode support
+- Code syntax highlighting
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React 19, TypeScript, Vite, Tailwind CSS
-- **Backend**: Express.js, TypeScript
-- **Database**: PostgreSQL (optional, uses in-memory storage by default)
+- **Frontend**: React 19, TypeScript, Vite
+- **Styling**: Tailwind CSS 4
+- **UI Components**: Radix UI
+- **Routing**: Wouter
+- **State Management**: TanStack Query
+- **Icons**: Lucide React
 
-## 📖 Documentation
+## 📁 Project Structure
 
-See [PROJECT_EVALUATION.md](./PROJECT_EVALUATION.md) for detailed project evaluation and setup instructions.
-
-## 🐛 Troubleshooting
-
-**Windows users**: The scripts now use `cross-env` for compatibility. If you still encounter issues, manually set environment variables:
-
-```powershell
-$env:NODE_ENV="development"
-npm run dev
+```
+├── client/
+│   ├── public/          # Static assets
+│   │   └── attached_assets/  # Images and resources
+│   ├── src/
+│   │   ├── components/  # React components
+│   │   ├── pages/       # Page components
+│   │   └── lib/         # Utilities and data
+│   └── index.html       # HTML template
+├── dist/                # Production build output
+├── package.json
+├── vite.config.ts       # Vite configuration
+└── vercel.json          # Vercel deployment config
 ```
 
-**Port already in use**: Change the PORT in `.env` or kill the process using port 5000.
+## 🎨 Features in Detail
 
+- **Responsive Design**: Works on desktop, tablet, and mobile
+- **Fast Performance**: Optimized build with code splitting
+- **SEO Ready**: Meta tags and Open Graph support
+- **Accessible**: Built with accessibility in mind using Radix UI
+
+## 📝 License
+
+MIT

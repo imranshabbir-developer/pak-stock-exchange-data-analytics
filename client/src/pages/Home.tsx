@@ -1,7 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Database, BarChart2, Code2 } from "lucide-react";
-import heroBg from "@assets/generated_images/abstract_financial_data_visualization_with_charts_and_graphs_in_dark_mode.png";
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/95 to-background z-10" />
         <img 
-          src={heroBg} 
+          src="/attached_assets/generated_images/abstract_financial_data_visualization_with_charts_and_graphs_in_dark_mode.png" 
           alt="Financial Data Background" 
           className="w-full h-full object-cover opacity-40"
         />
