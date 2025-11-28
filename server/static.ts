@@ -3,7 +3,10 @@ import fs from "fs";
 import path from "path";
 
 export function serveStatic(app: Express) {
-  const distPath = path.resolve(__dirname, "public");
+  // In production, the bundled server is at dist/index.cjs
+  // and the static files are at dist/public
+  // Use process.cwd() to get the project root, which works in both dev and production
+  const distPath = path.resolve(process.cwd(), "dist", "public");
   if (!fs.existsSync(distPath)) {
     throw new Error(
       `Could not find the build directory: ${distPath}, make sure to build the client first`,
